@@ -1,52 +1,79 @@
-/* Configurações Gerais */
+/* Configurações Gerais - Tema Noturno Total */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333;
-    background-color: #f4f4f4;
+    /* Um cinza muito escuro para o fundo total */
+    background-color: #121212; 
+    /* Um cinza bem claro para o texto, não branco puro */
+    color: #e0e0e0; 
 }
 
 /* Cabeçalho e Menu */
 header {
-    background: #2c3e50;
-    color: #fff;
+    /* Um cinza médio-escuro para o cabeçalho */
+    background: #1f1f1f; 
     padding: 1rem 0;
     text-align: center;
+    border-bottom: 1px solid #333; /* Linha sutil de divisão */
+}
+
+header h1 {
+    color: #f0f0f0; /* Título quase branco */
+    margin: 0 0 10px 0;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
+    /* Um cinza médio para os links não visitados */
+    color: #aaaaaa; 
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
+/* Cor do link ao passar o mouse */
 nav ul li a:hover {
-    color: #18bc9c;
+    color: #ffffff; /* Fica branco no hover */
 }
 
 /* Conteúdo Principal */
 main {
     max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 30px auto;
+    padding: 30px;
+    /* Um cinza ligeiramente mais claro que o fundo para dar profundidade */
+    background: #1e1e1e; 
     border-radius: 8px;
+    /* Uma sombra mais escura e sutil */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3); 
+    border: 1px solid #333; /* Borda sutil */
 }
 
-/* Galeria de Imagens (Grid) */
+/* Títulos dentro do conteúdo */
+main h2, main h3 {
+    color: #dcdcdc; /* Cinza claro para títulos */
+    border-bottom: 1px solid #444; /* Linha de divisão sob o título */
+    padding-bottom: 10px;
+}
+
+/* Parágrafos e listas */
+main p, main ul li {
+    color: #cccccc; /* Cinza médio-claro */
+}
+
+/* Galeria de Imagens (Grid) - Mantida */
 .galeria-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -58,25 +85,33 @@ main {
     width: 100%;
     height: auto;
     border-radius: 5px;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #333; /* Borda escura nas fotos */
 }
 
 .galeria-grid img:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(255,255,255,0.1); /* Brilho sutil no hover */
 }
 
 /* Rodapé */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     font-size: 0.9rem;
-    color: #777;
+    color: #666666; /* Cinza escuro para o rodapé sumir um pouco */
+    background: #1f1f1f;
+    border-top: 1px solid #333;
 }
 
 /* Responsividade para Celular */
 @media (max-width: 600px) {
     nav ul li {
         display: block;
-        margin: 10px 0;
+        margin: 15px 0;
+    }
+    main {
+        margin: 10px;
+        padding: 15px;
     }
 }
