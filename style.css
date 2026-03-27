@@ -71,8 +71,8 @@ main h2, main h3 {
     padding-bottom: 12px;
     margin-top: 10px;
     text-transform: uppercase;
-    letter-spacing: 20px;
-    font-weight: 400;
+    letter-spacing: 15px;
+    font-weight: 100;
     text-align: center;
     /* Linha de divisão inferior removida */
 }
@@ -83,7 +83,7 @@ main p, main ul li {
     font-size: 1.05rem;
     line-height: 2;
     text-align: justify;
-    font-weight: 100;
+    font-weight: 50;
 }
 
 /* Galeria de Imagens */
