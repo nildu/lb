@@ -134,3 +134,66 @@ footer {
         padding: 25px;
     }
 }
+/* Container da Busca */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.search-container form {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+/* Input Invisível que Expande */
+.search-input {
+    width: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.4s ease;
+    border-bottom: 1px solid transparent;
+}
+
+/* Estado Expandido (ao passar o mouse ou focar no campo) */
+.search-container:hover .search-input,
+.search-input:focus {
+    width: 140px; /* Largura da barra aberta */
+    padding: 5px 10px;
+    border-bottom: 1px solid #444; /* Linha sutil de cinza escuro */
+}
+
+/* O Ícone da Lupa */
+.search-button {
+    background: none;
+    border: none;
+    color: #888; /* Cinza discreto que combina com o menu */
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: color 0.3s ease;
+    padding: 0 5px;
+}
+
+.search-button:hover {
+    color: #ffffff; /* Brilha como os outros links */
+}
+
+/* Ajuste para o seu layout de duas colunas no celular */
+@media (max-width: 600px) {
+    .search-container {
+        grid-column: span 2; 
+        justify-content: center;
+        margin-top: 15px;
+    }
+    .search-input:focus, .search-container:hover .search-input {
+        width: 180px; /* Maior no mobile para facilitar a digitação */
+    }
+}
