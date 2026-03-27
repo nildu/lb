@@ -81,8 +81,9 @@ main h2, main h3 {
 main p, main ul li {
     color: #cccccc;
     font-size: 1.05rem;
-    line-height: 1.8;
-    text-align: center;
+    line-height: 2;
+    text-align: justify;
+    font-weight: 300;
 }
 
 /* Galeria de Imagens */
