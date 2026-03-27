@@ -1,6 +1,5 @@
 /* Configurações Gerais - Tema Noturno Minimalista */
 body {
-    /* Fontes modernas e limpas */
     font-family: 'Inter', 'Segoe UI', Helvetica, Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -9,48 +8,50 @@ body {
     color: #e0e0e0; 
 }
 
-/* Cabeçalho e Menu */
+/* Cabeçalho - Título removido, apenas menu */
 header {
     background: #1f1f1f; 
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     text-align: center;
-    border-bottom: 1px solid #333;
+    /* Linha de divisão removida conforme solicitado */
 }
 
+/* Título H1 removido do layout */
 header h1 {
-    color: #f0f0f0;
-    margin: 0 0 15px 0;
-    /* Estilo Minimalista: Caixa alta, fino e com espaçamento */
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-weight: 300;
-    font-size: 1.8rem;
+    display: none;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 nav ul li a {
-    color: #aaaaaa; 
+    color: #888888; /* Cinza mais discreto para itens não ativos */
     text-decoration: none;
-    /* Menu: Caixa alta, menor e com leve espaçamento */
     text-transform: uppercase;
     font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 1.5px;
     transition: color 0.3s ease;
+    padding: 5px 10px;
 }
 
 nav ul li a:hover {
     color: #ffffff;
+}
+
+/* Destaque para a página atual (Cinza levemente mais claro) */
+/* Nota: Adicione a classe 'active' no HTML do link da página onde você estiver */
+nav ul li a.active {
+    color: #e0e0e0;
+    background-color: rgba(255, 255, 255, 0.05); /* Fundo sutil para destacar */
+    border-radius: 4px;
 }
 
 /* Conteúdo Principal */
@@ -59,21 +60,20 @@ main {
     margin: 40px auto;
     padding: 40px;
     background: #1e1e1e; 
-    border-radius: 4px; /* Bordas menos arredondadas para um look mais sóbrio */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
-    border: 1px solid #333;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    /* Linha de borda removida */
 }
 
 /* Títulos das Seções */
 main h2, main h3 {
     color: #dcdcdc;
-    border-bottom: 1px solid #444;
     padding-bottom: 12px;
-    margin-top: 30px;
-    /* Estilo Minimalista: Caixa alta e espaçamento */
+    margin-top: 10px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 400;
+    /* Linha de divisão inferior removida */
 }
 
 /* Parágrafos e listas */
@@ -94,13 +94,8 @@ main p, main ul li {
     width: 100%;
     height: auto;
     border-radius: 2px;
-    transition: transform 0.4s ease, opacity 0.3s ease;
-    border: 1px solid #333;
-}
-
-.galeria-grid img:hover {
-    transform: scale(1.02);
-    opacity: 0.9;
+    transition: transform 0.4s ease;
+    /* Borda das fotos removida para minimalismo */
 }
 
 /* Rodapé */
@@ -108,24 +103,34 @@ footer {
     text-align: center;
     padding: 40px;
     font-size: 0.8rem;
-    color: #666666;
-    background: #121212; /* Fundo igual ao body para fundir o rodapé */
+    color: #555555;
+    background: #121212;
     text-transform: uppercase;
     letter-spacing: 1px;
+    /* Linha superior removida */
 }
 
-/* Responsividade */
+/* Responsividade para Telas Verticais (Celular) */
 @media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin: 20px 0;
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Cria as duas colunas solicitadas */
+        gap: 10px;
+        padding: 0 20px;
     }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+
     main {
         margin: 15px;
-        padding: 20px;
-    }
-    header h1 {
-        font-size: 1.4rem;
-        letter-spacing: 2px;
+        padding: 25px;
     }
 }
