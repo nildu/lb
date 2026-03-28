@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créditos | LB</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../style.css">
+    
+    <style>
+        .bio-section {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .academic-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-top: 40px;
+        }
+        .academic-links a {
+            color: #888;
+            text-decoration: none;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+            font-weight: 400;
+        }
+        .academic-links a:hover {
+            color: #ffffff;
+        }
+        .bio-text {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
 
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../">Início</a></li>
+                <li><a href="../intro/">Introdução</a></li>
+                <li><a href="../cap1/">Cap. 1</a></li>
+                <li><a href="../cap2/">Cap. 2</a></li>
+                <li><a href="../galeria/">Galeria</a></li>
+                <li><a href="../refs/">Referências</a></li>
+                <li><a href="./" class="active">Créditos</a></li>
+                <li><a href="../contatos/">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bio-section">
+            <h2>Nildo Costa</h2>
+            <p class="bio-text">
+                Arquiteto e pesquisador, atualmente mestrando no Programa de Pós-Graduação em Artes Visuais da ECA/USP (PPGAV). 
+                Minha pesquisa foca na teoria e crítica da fotografia, com ênfase na obra de Luiz Braga e na relação entre a produção autoral e comissionada.
+            </p>
+
+            <div class="academic-links">
+                <a href="http://lattes.cnpq.br/SEU_ID" target="_blank">Currículo Lattes</a>
+                <a href="https://orcid.org/SEU_ID" target="_blank">ORCID</a>
+                <a href="https://usp-br.academia.edu/NildoCosta" target="_blank">Academia.edu</a>
+                <a href="https://scholar.google.com.br/citations?user=SEU_ID" target="_blank">Google Acadêmico</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Nildo Costa - PPGAV ECA/USP</p>
+    </footer>
+
+</body>
+</html>
