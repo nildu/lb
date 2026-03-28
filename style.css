@@ -216,3 +216,30 @@ footer .cc-icons-fa {
 footer .cc-icons-fa:hover {
     color: #888; /* Brilho sutil no hover */
 }
+
+/* Seção CAPES nos Créditos */
+.capes-section {
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid #1e1e1e; /* Linha sutil de separação */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.capes-badge svg {
+    width: 35px;
+    height: 35px;
+    color: #444; /* Cor escura para não contrastar demais */
+}
+
+.capes-note {
+    font-size: 0.75rem;
+    color: #666; /* Cor levemente mais escura que o texto principal */
+    max-width: 450px;
+    line-height: 1.5;
+    font-style: italic;
+    font-weight: 300;
+}
