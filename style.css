@@ -236,3 +236,78 @@ footer .cc-icons-fa:hover {
     font-style: italic;
     margin: 0;
 }
+/* Ajuste para o link não ficar escondido sob o header fixo ao clicar */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; 
+}
+
+/* Estilo das figuras na introdução */
+.intro-fig {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.intro-fig img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 2px;
+}
+
+.intro-fig figcaption {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Seção de Notas de Rodapé */
+.footnote-sep {
+    border: 0;
+    border-top: 1px solid #333;
+    margin-top: 60px;
+}
+
+.footnotes {
+    font-size: 0.85rem;
+    color: #999;
+    line-height: 1.6;
+}
+
+.footnotes h3 {
+    font-size: 1rem;
+    text-align: left;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.footnotes ol {
+    padding-left: 20px;
+}
+
+.footnotes li {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.footnotes a {
+    color: #666;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.footnotes a:hover {
+    color: #fff;
+}
+
+/* Estilo do número no corpo do texto */
+sup a {
+    text-decoration: none;
+    color: #888;
+    font-weight: bold;
+    padding: 0 2px;
+}
+
+sup a:hover {
+    color: #fff;
+}
