@@ -201,3 +201,21 @@ footer {
         width: 180px; /* Maior no mobile para facilitar a digitação */
     }
 }
+/* Ícone da licença Creative Commons no rodapé */
+footer .cc-icon {
+    display: inline-block;
+    margin-top: 15px;
+    color: #555; /* Cor cinza escuro para o rodapé */
+    transition: color 0.3s ease, opacity 0.3s ease;
+    text-decoration: none;
+}
+
+footer .cc-icon:hover {
+    color: #888;
+    opacity: 1;
+}
+
+footer .cc-icon svg {
+    display: block;
+    margin: 0 auto;
+}
