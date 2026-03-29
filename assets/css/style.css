@@ -390,7 +390,7 @@ main p {
 /* Garante que a centralização da página de início continue funcionando */
 .home-text {
     text-indent: 0 !important;
-    text-align: center !important;
+    text-align: justify !important;
 }
 
 /* Remove o recuo de legendas de figuras e notas */
