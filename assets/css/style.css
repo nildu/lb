@@ -1,4 +1,4 @@
-/* Configurações Gerais - Tema Noturno Minimalista */
+/* Configurações Gerais - Tema Noturno */
 body {
     font-family: 'Inter', 'Segoe UI', Helvetica, Arial, sans-serif;
     line-height: 1.6;
@@ -13,7 +13,7 @@ header {
     background: #1f1f1f; 
     padding: 1.5rem 0;
     text-align: center;
-    /* Linha de divisão removida conforme solicitado */
+    /* Linha de divisão removida */
 }
 
 /* Título H1 removido do layout */
@@ -47,7 +47,7 @@ nav ul li a:hover {
 }
 
 /* Destaque para a página atual (Cinza levemente mais claro) */
-/* Nota: Adicione a classe 'active' no HTML do link da página onde você estiver */
+/* Nota: Adicionar a classe 'active' no HTML do link da página onde estiver */
 nav ul li a.active {
     color: #e0e0e0;
     background-color: rgba(255, 255, 255, 0.05); /* Fundo sutil para destacar */
@@ -99,7 +99,7 @@ main p, main ul li {
     height: auto;
     border-radius: 2px;
     transition: transform 0.4s ease;
-    /* Borda das fotos removida para minimalismo */
+    /* Borda das fotos removida */
 }
 
 /* Rodapé */
@@ -118,7 +118,7 @@ footer {
 @media (max-width: 600px) {
     nav ul {
         display: grid;
-        grid-template-columns: 1fr 1fr; /* Cria as duas colunas solicitadas */
+        grid-template-columns: 1fr 1fr; /* Cria as duas colunas */
         gap: 10px;
         padding: 0 20px;
     }
@@ -190,7 +190,7 @@ footer {
     color: #ffffff; /* Brilha como os outros links */
 }
 
-/* Ajuste para o seu layout de duas colunas no celular */
+/* Ajuste para o layout de duas colunas no celular */
 @media (max-width: 600px) {
     .search-container {
         grid-column: span 2; 
