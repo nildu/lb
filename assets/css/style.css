@@ -311,3 +311,10 @@ sup a {
 sup a:hover {
     color: #fff;
 }
+/* Centralização exclusiva para o texto da Home */
+.home-text {
+    text-align: center !important;
+    max-width: 700px; /* Opcional: limita a largura para o texto não ficar muito espalhado */
+    margin-left: auto;
+    margin-right: auto;
+}
