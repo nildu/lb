@@ -380,3 +380,23 @@ main .cred-container h3 {
     margin-bottom: 5px !important; /* Cola os itens da lista entre si */
     font-weight: 300;
 }
+
+main p {
+    text-indent: 1.25cm; /* Recuo padrão ABNT na primeira linha */
+    margin-bottom: 1.5rem; /* Garante um espaçamento saudável entre parágrafos */
+    text-align: justify; /* Mantém o alinhamento justificado para leitura acadêmica */
+}
+
+/* Garante que a centralização da página de início continue funcionando */
+.home-text {
+    text-indent: 0 !important;
+    text-align: center !important;
+}
+
+/* Remove o recuo de legendas de figuras e notas */
+.intro-fig figcaption, 
+.capes-note, 
+.footnotes p, 
+.footnote-list li {
+    text-indent: 0;
+}
