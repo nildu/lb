@@ -318,3 +318,31 @@ sup a:hover {
     margin-left: auto;
     margin-right: auto;
 }
+/* Ajuste do Título (Nome) */
+        .cred-container h3 {
+            text-align: left;
+            font-size: 1rem; /* Aumentei levemente para destacar */
+            margin-top: 40px;
+            margin-bottom: 5px; /* Diminuído para aproximar da descrição */
+            margin-left: 20px; /* Afastamento da margem esquerda */
+            color: #888;
+            letter-spacing: 2px;
+            font-weight: 700; /* Nome em negrito */
+            text-transform: uppercase;
+        }
+
+        /* Ajuste da Lista de Descrição */
+        .cred-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 0; /* Remove espaço superior para colar no nome */
+            margin-left: 20px; /* Mesmo afastamento do título */
+        }
+
+        .cred-list li {
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            text-align: left;
+            line-height: 1.4;
+            color: #aaa; /* Uma cor levemente diferente para contraste */
+        }
