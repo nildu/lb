@@ -322,9 +322,9 @@ sup a:hover {
 main .cred-container h3 {
     text-align: left !important;
     font-size: 1rem;
-    font-weight: 300 !important; 
+    font-weight: 400 !important; 
     color: #888;
-    letter-spacing: 10px !important; 
+    letter-spacing: 5px !important; 
     margin-top: 40px;
     margin-bottom: 0 !important;   /* Cola na descrição abaixo */
     padding-bottom: 2px !important; /* Remove o padding de 12px do h3 geral */
