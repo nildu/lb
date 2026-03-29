@@ -320,7 +320,7 @@ sup a:hover {
 }
 /* Nome do Autor - Anulando as folgas do CSS geral */
 main .cred-container h3 {
-    text-align: left !important;
+    text-align: center !important;
     font-size: 1rem;
     font-weight: 500 !important; 
     color: #888;
@@ -345,7 +345,7 @@ main .cred-container h3 {
 .cred-list li {
     font-size: 0.95rem;
     color: #999;
-    text-align: left !important; /* Remove o 'justify' do CSS geral para os créditos */
+    text-align: center !important; /* Remove o 'justify' do CSS geral para os créditos */
     line-height: 1.4 !important; /* Espaçamento entre linhas mais curto */
     margin-top: 0 !important;
     font-weight: 300;
