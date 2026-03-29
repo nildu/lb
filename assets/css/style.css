@@ -323,13 +323,14 @@ main .cred-container h3 {
     text-align: left !important;
     font-size: 1.1rem;
     font-weight: 800 !important; /* Negrito bem visível */
-    color: #ffffff;
+    color: #888;
     letter-spacing: 1px !important; /* Remove o espaçamento de 10px do h3 geral */
     margin-top: 40px;
     margin-bottom: 0 !important;   /* Cola na descrição abaixo */
     padding-bottom: 2px !important; /* Remove o padding de 12px do h3 geral */
     margin-left: 60px; /* Afasta bastante da borda esquerda do quadro */
-    text-transform: none; /* Mantém o nome natural, não tudo em maiúsculo */
+    margin-right: 60px;
+    text-transform: uppercase; /* Mantém o nome em maiúsculo */
 }
 
 /* Lista de Descrição */
@@ -338,6 +339,7 @@ main .cred-container h3 {
     padding: 0 !important;
     margin-top: 0 !important;    /* Garante que suba para encostar no nome */
     margin-left: 60px !important; /* Alinhado exatamente com o nome acima */
+    margin-right: 60px !important;
 }
 
 .cred-list li {
