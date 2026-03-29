@@ -326,7 +326,7 @@ main .cred-container h3 {
     color: #888;
     letter-spacing: 5px !important; 
     margin-top: 40px;
-    margin-bottom: 2px !important;   /* Cola na descrição abaixo */
+    margin-bottom: 5px !important;   /* Cola na descrição abaixo */
     padding-bottom: 2px !important; /* Remove o padding de 12px do h3 geral */
     margin-left: 60px; /* Afasta bastante da borda esquerda do quadro */
     margin-right: 60px;
