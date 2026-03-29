@@ -387,7 +387,7 @@ main p {
     text-align: justify; /* Mantém o alinhamento justificado para leitura acadêmica */
 }
 
-/* Garante que a centralização da página de início continue funcionando */
+/* Garante que a formatação da página de início continue funcionando */
 .home-text {
     text-indent: 0 !important;
     text-align: justify !important;
